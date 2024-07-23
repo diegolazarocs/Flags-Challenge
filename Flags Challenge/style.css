@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  outline: none;
+  border: none;
+  list-style: none;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+:root {
+  --height: 150px;
+
+  --red: #ed2938;
+  --white: #fff;
+  --blue: #002495;
+
+  --red2: #de0002;
+  --yellow: #ffce00;
+  --black: #000;
+
+  --red3: #fc3e32;
+  --green: #007e39;
+  --white2: #fff;
+
+  --red4: #ff0002;
+  --flag-hw: 200px;
+}
+
+body {
+  background: #e2e2e2;
+  margin: 1rem auto;
+  height: 100vh;
+  width: 100%;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h2 {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+h3 {
+  font-size: 0.8rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+section {
+  max-width: 350px;
+}
+.stripe {
+  flex-grow: 1;
+}
+.flag-france {
+  height: var(--height);
+  width: calc(var(--height) * 3 / 2);
+  background: white;
+  display: flex;
+}
+.flag-germany {
+  height: var(--height);
+  width: calc(var(--height) * 5 / 3);
+  background: white;
+  display: grid;
+}
+.flag-madagascar {
+  height: var(--height);
+  width: calc(var(--height) * 1.5);
+  display: flex;
+}
+.flag-switzerland {
+  height: var(--flag-hw);
+  width: var(--flag-hw);
+  background: var(--red4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.red {
+  background: var(--red);
+}
+.blue {
+  background: var(--blue);
+}
+.white {
+  background: var(--white);
+}
+
+.red2 {
+  background: var(--red2);
+}
+.black {
+  background: var(--black);
+}
+.yellow {
+  background: var(--yellow);
+}
+
+.white2 {
+  background: var(--white2);
+  width: calc(var(--height) / 2);
+}
+.red3 {
+  background: var(--red3);
+  height: calc(var(--height) / 2);
+  width: var(--height);
+}
+.green {
+  background: var(--green);
+  height: calc(var(--height) / 2);
+  width: var(--height);
+}
+.cross {
+  height: calc(var(--flag-hw) * 3 / 16);
+  width: calc(var(--flag-hw) * 5 / 8);
+  background: var(--white);
+}
+.cross2 {
+  transform: rotate(90deg);
+  position: absolute;
+}

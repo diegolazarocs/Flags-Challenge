@@ -14,13 +14,16 @@
 }
 :root {
   --height: 150px;
+  --flag-hw: 200px;
 
   --red: #ed2938;
   --white: #fff;
   --blue: #002495;
+  --blue2: #0269a6;
 
   --red2: #de0002;
   --yellow: #ffce00;
+
   --black: #000;
 
   --red3: #fc3e32;
@@ -28,22 +31,34 @@
   --white2: #fff;
 
   --red4: #ff0002;
-  --flag-hw: 200px;
+  --red5: #bc022c;
+
+  --orange: #e15307;
+  --green2: #10af2a;
 }
 
 body {
   background: #e2e2e2;
   margin: 1rem auto;
   height: 100vh;
+  
+}
+main{
   width: 100%;
   font-size: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
+}
+h1{
+  display: block;
+  text-align: center;
+  margin-bottom: 1rem;
+
 }
 
 h2 {
-  margin-top: 1rem;
   font-size: 1.5rem;
 }
 h3 {
@@ -52,7 +67,16 @@ h3 {
   margin-bottom: 1rem;
 }
 section {
-  max-width: 350px;
+  width: 350px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  border: 1px dashed #aaa;
+  padding: 1rem;
+  margin: .5rem;
 }
 .stripe {
   flex-grow: 1;
@@ -83,6 +107,34 @@ section {
   align-items: center;
   position: relative;
 }
+.flag-japan {
+  height: var(--height);
+  width: calc(var(--height) * 3 / 2);
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flag-sweden {
+  height: var(--height);
+  width: calc(var(--height) * 8 / 5);
+  background: var(--blue2);
+  display: flex;
+  position: relative;
+}
+.flag-ninger {
+  background: blue;
+  height: var(--flag-hw);
+  width: calc(var(--flag-hw) * 7 / 6);
+  display: grid;
+  position: relative;
+}
+.flag-italy {
+  height: var(--height);
+  width: calc(var(--height) * 3 / 2);
+  background: white;
+  display: flex;
+}
 
 .red {
   background: var(--red);
@@ -92,6 +144,10 @@ section {
 }
 .white {
   background: var(--white);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .red2 {
@@ -118,6 +174,29 @@ section {
   height: calc(var(--height) / 2);
   width: var(--height);
 }
+.orange {
+  background: var(--orange);
+}
+.circle-orange {
+  position: absolute;
+  background: var(--orange);
+  height: calc(var(--flag-hw) / 3 * 0.85);
+  width: calc(var(--flag-hw) / 3 * 0.85);
+  border-radius: 50%;
+}
+.green2 {
+  background: var(--green2);
+}
+
+.red4 {
+  background: var(--red4);
+}
+.red5 {
+  background: var(--red5);
+  width: calc(var(--height) * 3 / 5);
+  height: calc(var(--height) * 3 / 5);
+  border-radius: 50%;
+}
 .cross {
   height: calc(var(--flag-hw) * 3 / 16);
   width: calc(var(--flag-hw) * 5 / 8);
@@ -126,4 +205,19 @@ section {
 .cross2 {
   transform: rotate(90deg);
   position: absolute;
+}
+.stripe2 {
+  background: var(--yellow);
+  height: calc(var(--height) * 1 / 5);
+}
+
+.stripe-yellow {
+  align-self: center;
+  width: 100%;
+}
+.stripe-yellow2 {
+  position: absolute;
+  width: var(--height);
+  transform: rotate(90deg);
+  top: calc(var(--height) * 4 / 10);
 }
